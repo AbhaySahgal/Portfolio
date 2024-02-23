@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Abhay Sahgal</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Abhay Sahgal</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Abhay Sahgal profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Abhay Sahgal</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/abhaysahgal/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/AbhaySahgal'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Freshers <br />Software Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Tech <br />Bachelors Degree (CSE)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Abhay Sahgal, Your Dynamic Software Developer Extraordinaire 🌟<br>
+
+Based in Uttar Pradesh, I'm your go-to Full Stack Developer with a flair for graphic design, video editing, and UI/UX mastery. Armed with extensive technical expertise in AWS services, SQL, MySQL, and more, I'm passionate about driving technological advancements and innovation.
+
+With a Bachelor's Degree in Computer Science from the Institute of Engineering and Technology, Ram Manohar Lohiya Awadh University, and certifications including AWS Certified Solutions Architect Associate, I bring a wealth of knowledge and hands-on experience to every project.
+
+My skills range from Graphic Designing and Video Editing (utilizing tools like Vegas Pro and Premiere Pro) to Python Programming (certified for beginners), Responsive Web Development, and proficiency in MS Office.
+
+Dedicated to continuous learning, I'm actively engaged in exploring new technologies and staying updated with industry trends to ensure I deliver cutting-edge solutions.
+
+Eager to contribute effectively in a collaborative work environment, I'm excited about the possibility of joining your team and making a meaningful impact.<br>--------------------------------------------------------------<br>
+
+Welcome to my portfolio, where innovation meets excellence
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+
+
+    <!-- <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Software Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Software Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section> -->
+
+    <section id="experience" class="section-padding">
+      <div class="section__text__container">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Technical Skills</h1>
+      </div>
+      <div class="experience-details-container">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Programming Languages</h2>
+          <div class="article-container">
+            <!-- Java -->
+            <article>
+              <div class="content">
+                <h3>Java</h3>
+                <div class="level-bar">
+                  <div class="level-bar-fill" style="width: 80%;"></div>
+                </div>
+              </div>
+            </article>
+            <!-- Python -->
+            <article>
+              <div class="content">
+                <h3>Python</h3>
+                <div class="level-bar">
+                  <div class="level-bar-fill" style="width: 85%;"></div>
+                </div>
+              </div>
+            </article>
+            <!-- Android App Development -->
+            <article>
+              <div class="content">
+                <h3>Android App Development</h3>
+                <div class="level-bar">
+                  <div class="level-bar-fill" style="width: 70%;"></div>
+                </div>
+              </div>
+            </article>
+            <!-- C -->
+            <article>
+              <div class="content">
+                <h3>C</h3>
+                <div class="level-bar">
+                  <div class="level-bar-fill" style="width: 75%;"></div>
+                </div>
+              </div>
+            </article>
+            <!-- C++ -->
+            <article>
+              <div class="content">
+                <h3>C++</h3>
+                <div class="level-bar">
+                  <div class="level-bar-fill" style="width: 75%;"></div>
+                </div>
+              </div>
+            </article>
+            <!-- HTML -->
+            <article>
+              <div class="content">
+                <h3>HTML</h3>
+                <div class="level-bar">
+                  <div class="level-bar-fill" style="width: 85%;"></div>
+                </div>
+              </div>
+            </article>
+            <!-- CSS -->
+            <article>
+              <div class="content">
+                <h3>CSS</h3>
+                <div class="level-bar">
+                  <div class="level-bar-fill" style="width: 85%;"></div>
+                </div>
+              </div>
+            </article>
+            <!-- Add more articles for other skills -->
+          </div>
+        </div>
+        <!-- Certifications -->
+        <div class="details-container">
+          <h2 class="experience-sub-title">Certifications</h2>
+          <div class="article-container">
+            <!-- AWS Certified Solutions Architect -->
+            <article>
+              <div class="content">
+                <h3>AWS Certified Solutions Architect Associate</h3>
+                <!-- No level bar for certification -->
+              </div>
+            </article>
+            <!-- Full Stack Programming for Complete Beginners in Python -->
+            <article>
+              <div class="content">
+                <h3>Full Stack Programming for Complete Beginners in Python</h3>
+                <!-- No level bar for certification -->
+              </div>
+            </article>
+            <!-- Add more articles for other certifications -->
+          </div>
+        </div>
+        <!-- Additional Skills -->
+        <div class="details-container">
+          <h2 class="experience-sub-title">Additional Skills</h2>
+          <div class="article-container">
+            <!-- Graphic Designing -->
+            <article>
+              <div class="content">
+                <h3>Graphic Designing</h3>
+                <div class="level-bar">
+                  <div class="level-bar-fill" style="width: 80%;"></div> <!-- Adjust level as needed -->
+                </div>
+              </div>
+            </article>
+            <!-- Video Editing -->
+            <article>
+              <div class="content">
+                <h3>Video Editing (Vegas Pro, Premiere Pro)</h3>
+                <div class="level-bar">
+                  <div class="level-bar-fill" style="width: 75%;"></div> <!-- Adjust level as needed -->
+                </div>
+              </div>
+            </article>
+            <!-- UI/UX Design -->
+            <article>
+              <div class="content">
+                <h3>UI/UX Design</h3>
+                <div class="level-bar">
+                  <div class="level-bar-fill" style="width: 70%;"></div> <!-- Adjust level as needed -->
+                </div>
+              </div>
+            </article>
+            <!-- Add more articles for other skills -->
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    
+
+
+
+
+
+
+
+    <!-- <section id="projects"> -->
+      <!-- <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/AbhaySahgal'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/AbhaySahgal'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/AbhaySahgal'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/AbhaySahgal'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/AbhaySahgal'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/AbhaySahgal'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      /> -->
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      
+      <div class="phone-wrapper">
+        <div class="phone">
+            <div class="screen">
+                <!-- Insert three images for your portfolio -->
+                <div class="portfolio-item">
+                    <img src="./assets/portfolio_item_1.jpg" alt="Portfolio Item 1">
+                </div>
+                <div class="portfolio-item">
+                    <img src="./assets/portfolio_item_2.jpg" alt="Portfolio Item 2">
+                </div>
+                <div class="portfolio-item">
+                    <img src="./assets/portfolio_item_3.jpg" alt="Portfolio Item 3">
+                </div>
+            </div>
+        </div>
+        <div class="phone">
+            <div class="screen">
+                <!-- Insert three images for your portfolio -->
+                <div class="portfolio-item">
+                    <img src="./assets/portfolio_item_1.jpg" alt="Portfolio Item 1">
+                </div>
+                <div class="portfolio-item">
+                    <img src="./assets/portfolio_item_2.jpg" alt="Portfolio Item 2">
+                </div>
+                <div class="portfolio-item">
+                    <img src="./assets/portfolio_item_3.jpg" alt="Portfolio Item 3">
+                </div>
+            </div>
+        </div>
+        <div class="phone">
+            <div class="screen">
+                <!-- Insert three images for your portfolio -->
+                <div class="portfolio-item">
+                    <img src="./assets/portfolio_item_1.jpg" alt="Portfolio Item 1">
+                </div>
+                <div class="portfolio-item">
+                    <img src="./assets/portfolio_item_2.jpg" alt="Portfolio Item 2">
+                </div>
+                <div class="portfolio-item">
+                    <img src="./assets/portfolio_item_3.jpg" alt="Portfolio Item 3">
+                </div>
+            </div>
+        </div>
+        <div class="phone">
+            <div class="screen">
+                <!-- Insert three images for your portfolio -->
+                <div class="portfolio-item">
+                    <img src="./assets/portfolio_item_1.jpg" alt="Portfolio Item 1">
+                </div>
+                <div class="portfolio-item">
+                    <img src="./assets/portfolio_item_2.jpg" alt="Portfolio Item 2">
+                </div>
+                <div class="portfolio-item">
+                    <img src="./assets/portfolio_item_3.jpg" alt="Portfolio Item 3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- </section> -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">vickysahgal1998@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/abhaysahgal/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Abhay Sahgal. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
