@@ -392,7 +392,7 @@ section {
   width: 30%; /* Adjust the width as needed */
   max-width: 320px; /* Limit maximum width */
   height: 600px; /* Adjust the height as needed */
-  background: #ffffff;
+  background: #000000;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
@@ -413,6 +413,41 @@ section {
   flex-direction: column; /* Stack items in a column */
   align-items: center; /* Center items horizontally */
 }
+
+
+
+
+.video-phone {
+  width: 320px; /* Adjust the width of the phone */
+  height: 600px; /* Adjust the height of the phone */
+  background-color: #202020; /* Adjust the background color of the phone */
+  border-radius: 20px; /* Adjust the border radius of the phone */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); /* Adjust the box shadow of the phone */
+  position: relative;
+  display: inline-block;
+  margin: 10px; /* Adjust the margin between phones */
+}
+
+.video-phone .screen {
+  position: absolute;
+  top: -5%;
+  left: -13%;
+  width: 123%;
+  height: auto;
+  overflow: hidden;
+  background: #000;
+}
+
+.video-phone .video-content {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
 
 .portfolio-item {
   width: calc(100% - 10px); /* Make items wider */
